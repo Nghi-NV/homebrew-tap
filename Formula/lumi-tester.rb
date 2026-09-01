@@ -1,26 +1,26 @@
 class LumiTester < Formula
   desc "Multi-platform automation testing CLI"
   homepage "https://github.com/Nghi-NV/nl-tester"
-  version "0.1.33"
+  version "0.1.35"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Nghi-NV/nl-tester/releases/download/v0.1.33/lumi-tester-aarch64-apple-darwin", using: :nounzip
-      sha256 "b733e42d438ca028f63b0892ab04d931bea4b2f246c03376470c72572d80c2fd"
+      url "https://github.com/Nghi-NV/nl-tester/releases/download/v0.1.35/lumi-tester-aarch64-apple-darwin", using: :nounzip
+      sha256 "93b66e2771d8ac93e25c42fcf81c70a44feefa95adf41102c655be863381d337"
     else
-      url "https://github.com/Nghi-NV/nl-tester/releases/download/v0.1.33/lumi-tester-x86_64-apple-darwin", using: :nounzip
-      sha256 "0c3881c4f5aea3c8284dee4e32fe3431c2cd2e638a6a2c92d024c95218ad6442"
+      url "https://github.com/Nghi-NV/nl-tester/releases/download/v0.1.35/lumi-tester-x86_64-apple-darwin", using: :nounzip
+      sha256 "96a02cb5261509be202682c945d559b71fb6ceb43f06293e21630d9975093bb8"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/Nghi-NV/nl-tester/releases/download/v0.1.33/lumi-tester-aarch64-unknown-linux-gnu", using: :nounzip
-      sha256 "c7e39ea10b8127c5b8d27898e7eb24c8d4370bdcb3e5247fb8f39c55c10d8d5f"
+      url "https://github.com/Nghi-NV/nl-tester/releases/download/v0.1.35/lumi-tester-aarch64-unknown-linux-gnu", using: :nounzip
+      sha256 "c292796b99cbd930252ac61752ee7a429939f1ee9c79fa119fda7d4c603992af"
     else
-      url "https://github.com/Nghi-NV/nl-tester/releases/download/v0.1.33/lumi-tester-x86_64-unknown-linux-gnu", using: :nounzip
-      sha256 "d20ac11339749f5c8c57ceb68d65470ff59dd2dfd8556f72a0d81b256e08df30"
+      url "https://github.com/Nghi-NV/nl-tester/releases/download/v0.1.35/lumi-tester-x86_64-unknown-linux-gnu", using: :nounzip
+      sha256 "568592dc3a13c1c67847f2f9cd51f0aa755bf3802a24ccb8c3f72ae26ae079f4"
     end
   end
 
